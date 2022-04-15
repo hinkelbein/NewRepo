@@ -8,7 +8,6 @@ namespace ShortestPath1
         {
             InputData( );
             Implementation( );
-
         }
 
         static void Implementation()
