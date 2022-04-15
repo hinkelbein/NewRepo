@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C# Projects\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj": {}
+    "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj": {}
   },
   "projects": {
-    "D:\\C# Projects\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj": {
+    "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# Projects\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
+        "projectUniqueName": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
         "projectName": "ShortestPath.Test",
-        "projectPath": "D:\\C# Projects\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
+        "projectPath": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
         "packagesPath": "C:\\Users\\javad\\.nuget\\packages\\",
-        "outputPath": "D:\\C# Projects\\ShortestPath\\ShortestPath.Test\\obj\\",
+        "outputPath": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\C# Projects\\ShortestPath\\ShortestPath\\ShortestPath.csproj": {
-                "projectPath": "D:\\C# Projects\\ShortestPath\\ShortestPath\\ShortestPath.csproj"
+              "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj": {
+                "projectPath": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "D:\\C# Projects\\ShortestPath\\ShortestPath\\ShortestPath.csproj": {
+    "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# Projects\\ShortestPath\\ShortestPath\\ShortestPath.csproj",
+        "projectUniqueName": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj",
         "projectName": "ShortestPath",
-        "projectPath": "D:\\C# Projects\\ShortestPath\\ShortestPath\\ShortestPath.csproj",
+        "projectPath": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj",
         "packagesPath": "C:\\Users\\javad\\.nuget\\packages\\",
-        "outputPath": "D:\\C# Projects\\ShortestPath\\ShortestPath\\obj\\",
+        "outputPath": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\javad\\AppData\\Roaming\\NuGet\\NuGet.Config",

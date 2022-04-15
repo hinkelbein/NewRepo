@@ -1,0 +1,17 @@
+D:\Github\NewRepo\ShortestPath\ShortestPath\bin\Debug\net6.0\ShortestPath.exe
+D:\Github\NewRepo\ShortestPath\ShortestPath\bin\Debug\net6.0\ShortestPath.deps.json
+D:\Github\NewRepo\ShortestPath\ShortestPath\bin\Debug\net6.0\ShortestPath.runtimeconfig.json
+D:\Github\NewRepo\ShortestPath\ShortestPath\bin\Debug\net6.0\ShortestPath.dll
+D:\Github\NewRepo\ShortestPath\ShortestPath\bin\Debug\net6.0\ShortestPath.pdb
+D:\Github\NewRepo\ShortestPath\ShortestPath\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ShortestPath.csproj.AssemblyReference.cache
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ShortestPath.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ShortestPath.AssemblyInfoInputs.cache
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ShortestPath.AssemblyInfo.cs
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ShortestPath.csproj.CoreCompileInputs.cache
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ShortestPath.csproj.CopyComplete
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ShortestPath.dll
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\refint\ShortestPath.dll
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ShortestPath.pdb
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ShortestPath.genruntimeconfig.cache
+D:\Github\NewRepo\ShortestPath\ShortestPath\obj\Debug\net6.0\ref\ShortestPath.dll

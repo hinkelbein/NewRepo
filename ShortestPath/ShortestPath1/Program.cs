@@ -9,6 +9,7 @@ namespace ShortestPath1
             InputData( );
             Implementation( );
         }
+
         static void Implementation()
         {
             List<Arc> arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("D:/ShortestPath/ShortestPathInput.txt"));

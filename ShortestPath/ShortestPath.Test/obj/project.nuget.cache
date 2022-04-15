@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dVua7kkFArBuKXY+vofFgvFmXUXiGkp8KAWVvUVZDEzOKEu3LWQLWyGPtgWucs3KRI0VDH7Fd+TS1agtUgpiLA==",
+  "dgSpecHash": "76lhKPLjYsyOucxQyD34AoXYdwrrO3PNNVR8rXyK+2w7Gxve/ojl00OwSSC8C6KlEJMPGGjM84YZGP9Qm7ksuw==",
   "success": true,
-  "projectFilePath": "D:\\C# Projects\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
+  "projectFilePath": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\javad\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
     "C:\\Users\\javad\\.nuget\\packages\\microsoft.net.test.sdk\\17.1.0\\microsoft.net.test.sdk.17.1.0.nupkg.sha512",
