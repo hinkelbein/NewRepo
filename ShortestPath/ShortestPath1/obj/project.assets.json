@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj",
+      "projectUniqueName": "C:\\Users\\javad\\source\\repos\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj",
       "projectName": "ShortestPath1",
-      "projectPath": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj",
+      "projectPath": "C:\\Users\\javad\\source\\repos\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj",
       "packagesPath": "C:\\Users\\javad\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\NewRepo\\ShortestPath\\ShortestPath1\\obj\\",
+      "outputPath": "C:\\Users\\javad\\source\\repos\\NewRepo\\ShortestPath\\ShortestPath1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
