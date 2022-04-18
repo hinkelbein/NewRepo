@@ -2,16 +2,16 @@
 {
     public class ShortestPathAlgorithm
     {
-        public static string Origin;
-        public static string Destination;
-        public static string MainDestination;
+        public static string Origin = "1";
+        public static string Destination = "5";
+        public static string MainDestination = "5";
 
-        List<string> ExtractedNodes = new List<string>( );
+        List<string> ExtractedNodes = new List<string>();
         public void UpdateNodesProperties()
         {
             Arc.NodeCost[Destination] = 0;
 
-            for (int i = 0 ; i < Arc.NodeCost.Count ; i++)
+            for (int i = 0; i < Arc.NodeCost.Count; i++)
             {
                 List<Arc> backwardArcs = Arc.BackArcs[Destination];
 
@@ -23,11 +23,10 @@
                         Arc.NodeSuccessor[arc.Orig] = arc.Dest;
                     }
                 }
+
                 ExtractedNodes.Add(Destination);
-                //Arc.NodeCost.Remove(Destination);
-                //Destination = Arc.NodeCost.MinBy(x => x.Value).Key;
                 var des = Arc.NodeCost.OrderBy(x => x.Value).Where(node => node.Value >= Arc.NodeCost[Destination]);
-                foreach (KeyValuePair<string,double> item in des)
+                foreach (KeyValuePair<string, double> item in des)
                 {
                     if (item.Key != Destination)
                     {
@@ -35,14 +34,12 @@
                         break;
                     }
                 }
-
-                //if (Destination == Origin) { break; }
             }
         }
         public void ShortestPath()
         {
-            UpdateNodesProperties( );
-            List<string> ShortestPath = new List<string>( );
+            UpdateNodesProperties();
+            List<string> ShortestPath = new List<string>();
             ShortestPath.Add(Origin);
 
             while (true)
@@ -58,7 +55,7 @@
             {
                 Console.WriteLine(node);
             }
-            Console.ReadKey( );
+            //Console.ReadKey();
         }
     }
 }

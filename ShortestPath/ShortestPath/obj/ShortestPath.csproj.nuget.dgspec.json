@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\javad\\source\\repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj": {}
+    "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj": {}
   },
   "projects": {
-    "C:\\Users\\javad\\source\\repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj": {
+    "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\javad\\source\\repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj",
+        "projectUniqueName": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj",
         "projectName": "ShortestPath",
-        "projectPath": "C:\\Users\\javad\\source\\repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj",
+        "projectPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj",
         "packagesPath": "C:\\Users\\javad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\javad\\source\\repos\\NewRepo\\ShortestPath\\ShortestPath\\obj\\",
+        "outputPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
