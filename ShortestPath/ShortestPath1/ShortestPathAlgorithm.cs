@@ -2,9 +2,9 @@
 {
     public class ShortestPathAlgorithm
     {
-        public static string Origin = "1";
-        public static string Destination = "5";
-        public static string MainDestination = "5";
+        public static string Origin;
+        public static string Destination;
+        public static string MainDestination;
 
         List<string> ExtractedNodes = new List<string>();
         public void UpdateNodesProperties()
@@ -55,7 +55,7 @@
             {
                 Console.WriteLine(node);
             }
-            //Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }

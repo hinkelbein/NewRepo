@@ -2,8 +2,8 @@
 {
     public class Search
     {
-        public static string Origin = "1";
-        public static string Destination = "5";
+        public static string Origin;
+        public static string Destination;
         List<Node> ExtractedNodes = new List<Node>();
         public void UpdateNodesProperties()
         {
@@ -61,7 +61,7 @@
             {
                 Console.WriteLine(node);
             }
-            // Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }

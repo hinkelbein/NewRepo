@@ -1,17 +1,12 @@
 ﻿using Newtonsoft.Json;
-using System.Diagnostics;
 
 namespace ShortestPath1
 {
     class program
     {
-        public static Stopwatch watch = new Stopwatch();
-        public static double elapsedTime;
         static void Main(string[] args)
         {
-            watch.Reset();
-            watch.Start();
-            //InputData();
+            InputData();
             Implementation();
         }
 
@@ -24,10 +19,6 @@ namespace ShortestPath1
 
             ShortestPathAlgorithm obj1 = new ShortestPathAlgorithm();
             obj1.ShortestPath();
-
-            watch.Stop();
-            elapsedTime = watch.ElapsedMilliseconds / 1000.0;
-            Console.WriteLine(elapsedTime);
         }
 
         static void InputData()
@@ -36,8 +27,6 @@ namespace ShortestPath1
             ShortestPathAlgorithm.Origin = InputAccuracy();
             ShortestPathAlgorithm.Destination = InputAccuracy();
             ShortestPathAlgorithm.MainDestination = ShortestPathAlgorithm.Destination;
-
-
         }
 
         static string InputAccuracy()

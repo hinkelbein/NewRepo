@@ -1,0 +1,216 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\bin\Release\net6.0\598e0b6c-baa6-4afd-a239-288e06bd2bb8
+// command took 1.45s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\bin\Release\net6.0\598e0b6c-baa6-4afd-a239-288e06bd2bb8
+// command took 12.31s and exited with 1
+// start dotnet build -c Release  --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\bin\Release\net6.0\598e0b6c-baa6-4afd-a239-288e06bd2bb8
+// command took 2.21s and exited with 0
+// ***** Done, took 00:00:16 (16.06 sec)   *****
+// Found 2 benchmarks:
+//   Comparison.LowestNodeCostByLinq: DefaultJob
+//   Comparison.NodesOrderingByClass: DefaultJob
+
+// **************************
+// Benchmark: Comparison.LowestNodeCostByLinq: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "598e0b6c-baa6-4afd-a239-288e06bd2bb8.dll" --benchmarkName "BenchMarkExample.Comparison.LowestNodeCostByLinq" --job "Default" --benchmarkId 0 in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\bin\Release\net6.0\598e0b6c-baa6-4afd-a239-288e06bd2bb8\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.4 (6.0.422.16404), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 212600.00 ns, 212.6000 us/op
+WorkloadJitting  1: 1 op, 3362700.00 ns, 3.3627 ms/op
+
+OverheadJitting  2: 16 op, 254800.00 ns, 15.9250 us/op
+WorkloadJitting  2: 16 op, 245900.00 ns, 15.3688 us/op
+
+WorkloadPilot    1: 16 op, 12000.00 ns, 750.0000 ns/op
+WorkloadPilot    2: 32 op, 14000.00 ns, 437.5000 ns/op
+WorkloadPilot    3: 64 op, 24600.00 ns, 384.3750 ns/op
+WorkloadPilot    4: 128 op, 124200.00 ns, 970.3125 ns/op
+WorkloadPilot    5: 256 op, 87800.00 ns, 342.9688 ns/op
+WorkloadPilot    6: 512 op, 199600.00 ns, 389.8438 ns/op
+WorkloadPilot    7: 1024 op, 374500.00 ns, 365.7227 ns/op
+WorkloadPilot    8: 2048 op, 1365800.00 ns, 666.8945 ns/op
+WorkloadPilot    9: 4096 op, 1712100.00 ns, 417.9932 ns/op
+WorkloadPilot   10: 8192 op, 3254300.00 ns, 397.2534 ns/op
+WorkloadPilot   11: 16384 op, 6390400.00 ns, 390.0391 ns/op
+WorkloadPilot   12: 32768 op, 14750700.00 ns, 450.1556 ns/op
+WorkloadPilot   13: 65536 op, 24353700.00 ns, 371.6080 ns/op
+WorkloadPilot   14: 131072 op, 46043400.00 ns, 351.2833 ns/op
+WorkloadPilot   15: 262144 op, 89167100.00 ns, 340.1455 ns/op
+WorkloadPilot   16: 524288 op, 128956900.00 ns, 245.9658 ns/op
+WorkloadPilot   17: 1048576 op, 250185800.00 ns, 238.5958 ns/op
+WorkloadPilot   18: 2097152 op, 506272400.00 ns, 241.4095 ns/op
+
+OverheadWarmup   1: 2097152 op, 4829300.00 ns, 2.3028 ns/op
+OverheadWarmup   2: 2097152 op, 4875000.00 ns, 2.3246 ns/op
+OverheadWarmup   3: 2097152 op, 5737500.00 ns, 2.7359 ns/op
+OverheadWarmup   4: 2097152 op, 4645900.00 ns, 2.2153 ns/op
+OverheadWarmup   5: 2097152 op, 4750400.00 ns, 2.2652 ns/op
+OverheadWarmup   6: 2097152 op, 4916600.00 ns, 2.3444 ns/op
+OverheadWarmup   7: 2097152 op, 4831800.00 ns, 2.3040 ns/op
+
+OverheadActual   1: 2097152 op, 4971000.00 ns, 2.3704 ns/op
+OverheadActual   2: 2097152 op, 4577900.00 ns, 2.1829 ns/op
+OverheadActual   3: 2097152 op, 4861700.00 ns, 2.3182 ns/op
+OverheadActual   4: 2097152 op, 5245000.00 ns, 2.5010 ns/op
+OverheadActual   5: 2097152 op, 5424200.00 ns, 2.5865 ns/op
+OverheadActual   6: 2097152 op, 5016400.00 ns, 2.3920 ns/op
+OverheadActual   7: 2097152 op, 4884600.00 ns, 2.3292 ns/op
+OverheadActual   8: 2097152 op, 5410800.00 ns, 2.5801 ns/op
+OverheadActual   9: 2097152 op, 4850200.00 ns, 2.3128 ns/op
+OverheadActual  10: 2097152 op, 4881500.00 ns, 2.3277 ns/op
+OverheadActual  11: 2097152 op, 4749300.00 ns, 2.2646 ns/op
+OverheadActual  12: 2097152 op, 4843700.00 ns, 2.3097 ns/op
+OverheadActual  13: 2097152 op, 4842200.00 ns, 2.3089 ns/op
+OverheadActual  14: 2097152 op, 4956000.00 ns, 2.3632 ns/op
+OverheadActual  15: 2097152 op, 4811100.00 ns, 2.2941 ns/op
+
+WorkloadWarmup   1: 2097152 op, 467878400.00 ns, 223.1018 ns/op
+WorkloadWarmup   2: 2097152 op, 460594400.00 ns, 219.6285 ns/op
+WorkloadWarmup   3: 2097152 op, 459055900.00 ns, 218.8949 ns/op
+WorkloadWarmup   4: 2097152 op, 460629700.00 ns, 219.6454 ns/op
+WorkloadWarmup   5: 2097152 op, 459840800.00 ns, 219.2692 ns/op
+WorkloadWarmup   6: 2097152 op, 447955300.00 ns, 213.6017 ns/op
+WorkloadWarmup   7: 2097152 op, 448176800.00 ns, 213.7074 ns/op
+WorkloadWarmup   8: 2097152 op, 449107100.00 ns, 214.1510 ns/op
+WorkloadWarmup   9: 2097152 op, 447456500.00 ns, 213.3639 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 2097152 op, 460158500.00 ns, 219.4207 ns/op
+WorkloadActual   2: 2097152 op, 459324100.00 ns, 219.0228 ns/op
+WorkloadActual   3: 2097152 op, 459930400.00 ns, 219.3119 ns/op
+WorkloadActual   4: 2097152 op, 463155900.00 ns, 220.8499 ns/op
+WorkloadActual   5: 2097152 op, 458814800.00 ns, 218.7799 ns/op
+WorkloadActual   6: 2097152 op, 459479700.00 ns, 219.0970 ns/op
+WorkloadActual   7: 2097152 op, 457790200.00 ns, 218.2914 ns/op
+WorkloadActual   8: 2097152 op, 460401500.00 ns, 219.5365 ns/op
+WorkloadActual   9: 2097152 op, 460791000.00 ns, 219.7223 ns/op
+WorkloadActual  10: 2097152 op, 457724000.00 ns, 218.2598 ns/op
+WorkloadActual  11: 2097152 op, 459717200.00 ns, 219.2102 ns/op
+WorkloadActual  12: 2097152 op, 462696200.00 ns, 220.6307 ns/op
+WorkloadActual  13: 2097152 op, 457002900.00 ns, 217.9160 ns/op
+WorkloadActual  14: 2097152 op, 456682100.00 ns, 217.7630 ns/op
+WorkloadActual  15: 2097152 op, 459486900.00 ns, 219.1004 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 2097152 op, 455277000.00 ns, 217.0930 ns/op
+WorkloadResult   2: 2097152 op, 454442600.00 ns, 216.6951 ns/op
+WorkloadResult   3: 2097152 op, 455048900.00 ns, 216.9842 ns/op
+WorkloadResult   4: 2097152 op, 458274400.00 ns, 218.5223 ns/op
+WorkloadResult   5: 2097152 op, 453933300.00 ns, 216.4523 ns/op
+WorkloadResult   6: 2097152 op, 454598200.00 ns, 216.7693 ns/op
+WorkloadResult   7: 2097152 op, 452908700.00 ns, 215.9637 ns/op
+WorkloadResult   8: 2097152 op, 455520000.00 ns, 217.2089 ns/op
+WorkloadResult   9: 2097152 op, 455909500.00 ns, 217.3946 ns/op
+WorkloadResult  10: 2097152 op, 452842500.00 ns, 215.9321 ns/op
+WorkloadResult  11: 2097152 op, 454835700.00 ns, 216.8826 ns/op
+WorkloadResult  12: 2097152 op, 457814700.00 ns, 218.3031 ns/op
+WorkloadResult  13: 2097152 op, 452121400.00 ns, 215.5883 ns/op
+WorkloadResult  14: 2097152 op, 451800600.00 ns, 215.4353 ns/op
+WorkloadResult  15: 2097152 op, 454605400.00 ns, 216.7727 ns/op
+
+// AfterAll
+// Benchmark Process 16780 has exited with code 0.
+
+Mean = 216.800 ns, StdErr = 0.227 ns (0.10%), N = 15, StdDev = 0.878 ns
+Min = 215.435 ns, Q1 = 216.208 ns, Median = 216.773 ns, Q3 = 217.151 ns, Max = 218.522 ns
+IQR = 0.943 ns, LowerFence = 214.794 ns, UpperFence = 218.565 ns
+ConfidenceInterval = [215.861 ns; 217.738 ns] (CI 99.9%), Margin = 0.939 ns (0.43% of Mean)
+Skewness = 0.32, Kurtosis = 2.33, MValue = 2
+
+// **************************
+// Benchmark: Comparison.NodesOrderingByClass: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "598e0b6c-baa6-4afd-a239-288e06bd2bb8.dll" --benchmarkName "BenchMarkExample.Comparison.NodesOrderingByClass" --job "Default" --benchmarkId 1 in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\bin\Release\net6.0\598e0b6c-baa6-4afd-a239-288e06bd2bb8\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.4 (6.0.422.16404), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 178800.00 ns, 178.8000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at BenchMarkExample.Node.NodesOrderingByClass() in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\Node.cs:line 27
+   at BenchMarkExample.Comparison.NodesOrderingByClass() in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\Comparison.cs:line 22
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionNoUnroll(Int64 invokeCount) in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\bin\Release\net6.0\598e0b6c-baa6-4afd-a239-288e06bd2bb8\598e0b6c-baa6-4afd-a239-288e06bd2bb8.notcs:line 1574
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\bin\Release\net6.0\598e0b6c-baa6-4afd-a239-288e06bd2bb8\598e0b6c-baa6-4afd-a239-288e06bd2bb8.notcs:line 900
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\javad\Source\Repos\NewRepo\ShortestPath\BenchMarkExample\bin\Release\net6.0\598e0b6c-baa6-4afd-a239-288e06bd2bb8\598e0b6c-baa6-4afd-a239-288e06bd2bb8.notcs:line 52
+// AfterAll
+// Benchmark Process 9308 has exited with code -1.
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\BenchMarkExample.Comparison-report.csv
+  BenchmarkDotNet.Artifacts\results\BenchMarkExample.Comparison-report-github.md
+  BenchmarkDotNet.Artifacts\results\BenchMarkExample.Comparison-report.html
+
+// * Detailed results *
+Comparison.NodesOrderingByClass: DefaultJob
+Runtime = .NET 6.0.4 (6.0.422.16404), X64 RyuJIT; GC = Concurrent Workstation
+There are not any results runs
+
+Comparison.LowestNodeCostByLinq: DefaultJob
+Runtime = .NET 6.0.4 (6.0.422.16404), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 216.800 ns, StdErr = 0.227 ns (0.10%), N = 15, StdDev = 0.878 ns
+Min = 215.435 ns, Q1 = 216.208 ns, Median = 216.773 ns, Q3 = 217.151 ns, Max = 218.522 ns
+IQR = 0.943 ns, LowerFence = 214.794 ns, UpperFence = 218.565 ns
+ConfidenceInterval = [215.861 ns; 217.738 ns] (CI 99.9%), Margin = 0.939 ns (0.43% of Mean)
+Skewness = 0.32, Kurtosis = 2.33, MValue = 2
+-------------------- Histogram --------------------
+[214.968 ns ; 218.990 ns) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.22000
+Intel Core i7-8550U CPU 1.80GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
+.NET SDK=6.0.202
+  [Host]     : .NET 6.0.4 (6.0.422.16404), X64 RyuJIT
+  DefaultJob : .NET 6.0.4 (6.0.422.16404), X64 RyuJIT
+
+
+|               Method |     Mean |   Error |  StdDev | Rank |
+|--------------------- |---------:|--------:|--------:|-----:|
+| NodesOrderingByClass |       NA |      NA |      NA |    ? |
+| LowestNodeCostByLinq | 216.8 ns | 0.94 ns | 0.88 ns |    1 |
+
+Benchmarks with issues:
+  Comparison.NodesOrderingByClass: DefaultJob
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  Rank   : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  1 ns   : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:12 (12.94 sec), executed benchmarks: 2
+
+Global total time: 00:00:29 (29.01 sec), executed benchmarks: 2
+// * Artifacts cleanup *

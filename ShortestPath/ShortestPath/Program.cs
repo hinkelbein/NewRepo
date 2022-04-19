@@ -1,18 +1,12 @@
 ﻿using Newtonsoft.Json;
-using System.Diagnostics;
 
 namespace ShortestPath
 {
     class program
     {
-        public static Stopwatch watch = new Stopwatch();
-        public static double elapsedTime;
         static void Main(string[] args)
         {
-
-            watch.Reset();
-            watch.Start();
-            //InputData();
+            InputData();
             Implementation();
         }
         static void Implementation()
@@ -24,9 +18,6 @@ namespace ShortestPath
 
             Search obj1 = new Search();
             obj1.ShortestPath();
-            watch.Stop();
-            elapsedTime = watch.ElapsedMilliseconds / 1000.0;
-            Console.WriteLine(elapsedTime);
         }
 
         static void InputData()
@@ -34,7 +25,6 @@ namespace ShortestPath
             Console.WriteLine("Please choose your Origin-Destination couple\nYou are allowed to choose numbers between 1-6");
             Search.Origin = InputAccuracy();
             Search.Destination = InputAccuracy();
-
         }
 
         static string InputAccuracy()
