@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using Newtonsoft.Json;
 
 namespace BenchMarkExample
 {
@@ -7,23 +8,16 @@ namespace BenchMarkExample
     [MemoryDiagnoser]
     public class Comparison
     {
-        Dictionary search = new Dictionary();
         [Benchmark]
-        public void LowestNodeCostByLinq()
+        public void Implementatio()
         {
+            Arc.arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("D:/ShortestPath/ShortestPathInput.txt"));
+            Arc obj = new Arc();
+            obj.NodeAssignment();
+            obj.UpdateNodesProperties();
 
-            search.LowestNodeCostByLinq();
+            //ShortestPathAlgorithm obj1 = new ShortestPathAlgorithm();
+            //obj1.ShortestPath();
         }
-        [Benchmark]
-        public void LowestNodeCostBySorting()
-        {
-            search.LowestNodeCostBySorting();
-        }
-        [Benchmark]
-        public void LowestNodeCostByManualSorting()
-        {
-            search.LowestNodeCostByManualSorting();
-        }
-
     }
 }

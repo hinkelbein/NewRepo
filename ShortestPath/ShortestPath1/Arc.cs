@@ -12,7 +12,7 @@
         public static Dictionary<string, double> NodeCost = new Dictionary<string, double>();
         public static Dictionary<string, string> NodeSuccessor = new Dictionary<string, string>();
 
-        public void NodeAssignment()
+        public void NodesBackarcAssingment()
         {
             foreach (Arc arc in arcs)
             {
