@@ -14,22 +14,26 @@
 
         public void NodesBackarcAssingment()
         {
-            foreach (Arc arc in arcs)
+            for (int i = 0; i < arcs.Count; i++)
             {
-                if (!BackArcs.ContainsKey(arc.Dest))
+                if (i == 0)
                 {
-                    NodesInitialization(arc.Dest);
-                    List<Arc> list = new List<Arc>() { arc };
-                    BackArcs.Add(arc.Dest, list);
+                    NodesInitialization(arcs[i].Orig);
+                }
+
+                if (!BackArcs.ContainsKey(arcs[i].Dest))
+                {
+                    NodesInitialization(arcs[i].Dest);
+                    List<Arc> list = new List<Arc>() { arcs[i] };
+                    BackArcs.Add(arcs[i].Dest, list);
                 }
                 else
                 {
-                    BackArcs[arc.Dest].Add(arc);
+                    BackArcs[arcs[i].Dest].Add(arcs[i]);
                 }
             }
         }
-
-        private void NodesInitialization(string dest)
+        public void NodesInitialization(string dest)
         {
             NodeCost.Add(dest, double.PositiveInfinity);
             NodeSuccessor.Add(dest, " ");

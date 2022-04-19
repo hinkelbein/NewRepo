@@ -32,3 +32,20 @@ C:\Users\javad\source\repos\NewRepo\ShortestPath\ShortestPath1\obj\Debug\net6.0\
 C:\Users\javad\source\repos\NewRepo\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.pdb
 C:\Users\javad\source\repos\NewRepo\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.genruntimeconfig.cache
 C:\Users\javad\source\repos\NewRepo\ShortestPath\ShortestPath1\obj\Debug\net6.0\ref\ShortestPath1.dll
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\bin\Debug\net6.0\ShortestPath1.exe
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\bin\Debug\net6.0\ShortestPath1.deps.json
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\bin\Debug\net6.0\ShortestPath1.runtimeconfig.json
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\bin\Debug\net6.0\ShortestPath1.dll
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\bin\Debug\net6.0\ShortestPath1.pdb
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.csproj.AssemblyReference.cache
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.AssemblyInfoInputs.cache
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.AssemblyInfo.cs
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.csproj.CoreCompileInputs.cache
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.csproj.CopyComplete
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.dll
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\refint\ShortestPath1.dll
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.pdb
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ShortestPath1.genruntimeconfig.cache
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath1\obj\Debug\net6.0\ref\ShortestPath1.dll

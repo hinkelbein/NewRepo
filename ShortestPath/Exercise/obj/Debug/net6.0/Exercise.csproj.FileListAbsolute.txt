@@ -13,3 +13,11 @@ C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\refin
 C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\Exercise.pdb
 C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\Exercise.genruntimeconfig.cache
 C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\ref\Exercise.dll
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\Exercise\obj\Debug\net6.0\Exercise.csproj.AssemblyReference.cache
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\Exercise\obj\Debug\net6.0\Exercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\Exercise\obj\Debug\net6.0\Exercise.AssemblyInfoInputs.cache
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\Exercise\obj\Debug\net6.0\Exercise.AssemblyInfo.cs
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\Exercise\obj\Debug\net6.0\Exercise.csproj.CoreCompileInputs.cache
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\Exercise\obj\Debug\net6.0\Exercise.dll
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\Exercise\obj\Debug\net6.0\refint\Exercise.dll
+C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\Exercise\obj\Debug\net6.0\Exercise.pdb
