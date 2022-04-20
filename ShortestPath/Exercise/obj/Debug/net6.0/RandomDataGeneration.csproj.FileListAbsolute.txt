@@ -1,0 +1,15 @@
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\bin\Debug\net6.0\RandomDataGeneration.exe
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\bin\Debug\net6.0\RandomDataGeneration.deps.json
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\bin\Debug\net6.0\RandomDataGeneration.runtimeconfig.json
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\bin\Debug\net6.0\RandomDataGeneration.dll
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\bin\Debug\net6.0\RandomDataGeneration.pdb
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\RandomDataGeneration.csproj.AssemblyReference.cache
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\RandomDataGeneration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\RandomDataGeneration.AssemblyInfoInputs.cache
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\RandomDataGeneration.AssemblyInfo.cs
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\RandomDataGeneration.csproj.CoreCompileInputs.cache
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\RandomDataGeneration.dll
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\refint\RandomDataGeneration.dll
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\RandomDataGeneration.pdb
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\RandomDataGeneration.genruntimeconfig.cache
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\Exercise\obj\Debug\net6.0\ref\RandomDataGeneration.dll

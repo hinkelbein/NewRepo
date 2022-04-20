@@ -27,6 +27,7 @@
 
                 ExtractedNodes.Add(Destination);
                 var des = Arc.NodeCost.OrderBy(x => x.Value).Where(node => node.Value >= Arc.NodeCost[Destination]);
+                var des1 = Arc.NodeCost.Where(node => node.Value >= Arc.NodeCost[Destination]).Min(new Comparer());
                 foreach (KeyValuePair<string, double> item in des)
                 {
                     if (item.Key != Destination)

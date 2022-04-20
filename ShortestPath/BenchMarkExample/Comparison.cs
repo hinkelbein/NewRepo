@@ -1,5 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 using Newtonsoft.Json;
+using ShortestPath1;
 
 namespace BenchMarkExample
 {

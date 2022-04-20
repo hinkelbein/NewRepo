@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortestPath1", "ShortestPa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchMarkExample", "BenchMarkExample\BenchMarkExample.csproj", "{7DFEB0BC-26CF-4959-A82C-76BE59BCD133}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise", "Exercise\Exercise.csproj", "{AA703A38-011E-47C1-99DE-DDCE9AE283F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomDataGeneration", "Exercise\RandomDataGeneration.csproj", "{AA703A38-011E-47C1-99DE-DDCE9AE283F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

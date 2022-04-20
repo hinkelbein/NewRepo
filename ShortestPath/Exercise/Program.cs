@@ -1,12 +1,12 @@
-﻿namespace Exercise
+﻿namespace RandomDataGeneration
 {
     static class Program
     {
         static void Main(string[] args)
         {
-            Sorting sorting = new Sorting();
-            //sorting.LowestNodeCostBySorting();
-            sorting.LowestNodeCostBySortNumber();
+            DataGeneration sort = new DataGeneration();
+            sort.Data_Assigning();
+            Console.ReadKey();
         }
     }
 }

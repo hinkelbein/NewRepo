@@ -11,34 +11,24 @@ namespace ShortestPath.Test
             SearchAlgorithm.Origin = "1";
             SearchAlgorithm.Destination = "5";
             SearchAlgorithm.MainDestination = "5";
-            //Arc.arcs.Add(new Arc { Idno = "1", Orig = "1", Dest = "2", Cost = 7 });
-            //Arc.arcs.Add(new Arc { Idno = "2", Orig = "1", Dest = "3", Cost = 9 });
-            //Arc.arcs.Add(new Arc { Idno = "3", Orig = "1", Dest = "6", Cost = 14 });
-            //Arc.arcs.Add(new Arc { Idno = "4", Orig = "2", Dest = "1", Cost = 7 });
-            //Arc.arcs.Add(new Arc { Idno = "5", Orig = "2", Dest = "3", Cost = 10 });
-            //Arc.arcs.Add(new Arc { Idno = "6", Orig = "2", Dest = "4", Cost = 15 });
-            //Arc.arcs.Add(new Arc { Idno = "7", Orig = "3", Dest = "1", Cost = 9 });
-            //Arc.arcs.Add(new Arc { Idno = "8", Orig = "3", Dest = "2", Cost = 10 });
-            //Arc.arcs.Add(new Arc { Idno = "9", Orig = "3", Dest = "4", Cost = 11 });
-            //Arc.arcs.Add(new Arc { Idno = "10", Orig = "3", Dest = "6", Cost = 2 });
-            //Arc.arcs.Add(new Arc { Idno = "11", Orig = "4", Dest = "2", Cost = 15 });
-            //Arc.arcs.Add(new Arc { Idno = "12", Orig = "4", Dest = "3", Cost = 11 });
-            //Arc.arcs.Add(new Arc { Idno = "13", Orig = "4", Dest = "5", Cost = 6 });
-            //Arc.arcs.Add(new Arc { Idno = "14", Orig = "5", Dest = "4", Cost = 6 });
-            //Arc.arcs.Add(new Arc { Idno = "15", Orig = "5", Dest = "6", Cost = 9 });
-            //Arc.arcs.Add(new Arc { Idno = "16", Orig = "6", Dest = "1", Cost = 14 });
-            //Arc.arcs.Add(new Arc { Idno = "17", Orig = "6", Dest = "3", Cost = 2 });
-            //Arc.arcs.Add(new Arc { Idno = "18", Orig = "6", Dest = "5", Cost = 9 });
-
-            Arc.arcs.Add(new Arc { Idno = "1", Orig = "1", Dest = "4", Cost = 8 });
-            Arc.arcs.Add(new Arc { Idno = "2", Orig = "2", Dest = "1", Cost = 4 });
-            Arc.arcs.Add(new Arc { Idno = "3", Orig = "2", Dest = "5", Cost = 15 });
-            Arc.arcs.Add(new Arc { Idno = "4", Orig = "3", Dest = "1", Cost = 5 });
-            Arc.arcs.Add(new Arc { Idno = "5", Orig = "3", Dest = "2", Cost = 7 });
-            Arc.arcs.Add(new Arc { Idno = "1", Orig = "3", Dest = "5", Cost = 10 });
-            Arc.arcs.Add(new Arc { Idno = "6", Orig = "4", Dest = "3", Cost = 7 });
-            Arc.arcs.Add(new Arc { Idno = "7", Orig = "5", Dest = "3", Cost = 10 });
-            Arc.arcs.Add(new Arc { Idno = "8", Orig = "5", Dest = "4", Cost = 2 });
+            Arc.arcs.Add(new Arc { Idno = "1", Orig = "1", Dest = "2", Cost = 7 });
+            Arc.arcs.Add(new Arc { Idno = "2", Orig = "1", Dest = "3", Cost = 9 });
+            Arc.arcs.Add(new Arc { Idno = "3", Orig = "1", Dest = "6", Cost = 14 });
+            Arc.arcs.Add(new Arc { Idno = "4", Orig = "2", Dest = "1", Cost = 7 });
+            Arc.arcs.Add(new Arc { Idno = "5", Orig = "2", Dest = "3", Cost = 10 });
+            Arc.arcs.Add(new Arc { Idno = "6", Orig = "2", Dest = "4", Cost = 15 });
+            Arc.arcs.Add(new Arc { Idno = "7", Orig = "3", Dest = "1", Cost = 9 });
+            Arc.arcs.Add(new Arc { Idno = "8", Orig = "3", Dest = "2", Cost = 10 });
+            Arc.arcs.Add(new Arc { Idno = "9", Orig = "3", Dest = "4", Cost = 11 });
+            Arc.arcs.Add(new Arc { Idno = "10", Orig = "3", Dest = "6", Cost = 2 });
+            Arc.arcs.Add(new Arc { Idno = "11", Orig = "4", Dest = "2", Cost = 15 });
+            Arc.arcs.Add(new Arc { Idno = "12", Orig = "4", Dest = "3", Cost = 11 });
+            Arc.arcs.Add(new Arc { Idno = "13", Orig = "4", Dest = "5", Cost = 6 });
+            Arc.arcs.Add(new Arc { Idno = "14", Orig = "5", Dest = "4", Cost = 6 });
+            Arc.arcs.Add(new Arc { Idno = "15", Orig = "5", Dest = "6", Cost = 9 });
+            Arc.arcs.Add(new Arc { Idno = "16", Orig = "6", Dest = "1", Cost = 14 });
+            Arc.arcs.Add(new Arc { Idno = "17", Orig = "6", Dest = "3", Cost = 2 });
+            Arc.arcs.Add(new Arc { Idno = "18", Orig = "6", Dest = "5", Cost = 9 });
 
             Arc obj = new Arc();
             obj.NodesBackarcAssingment();
@@ -50,11 +40,11 @@ namespace ShortestPath.Test
             SearchAlgorithm obj1 = new SearchAlgorithm();
             obj1.UpdateNodesProperties();
 
-            Assert.AreEqual(25, Arc.NodeCost["1"]);
-            Assert.AreEqual(17, Arc.NodeCost["2"]);
+            Assert.AreEqual(20, Arc.NodeCost["1"]);
+            Assert.AreEqual(21, Arc.NodeCost["2"]);
 
-            Assert.AreEqual("4", Arc.NodeSuccessor["1"]);
-            Assert.AreEqual("3", Arc.NodeSuccessor["2"]);
+            Assert.AreEqual("3", Arc.NodeSuccessor["1"]);
+            Assert.AreEqual("4", Arc.NodeSuccessor["2"]);
         }
 
         [TestMethod]

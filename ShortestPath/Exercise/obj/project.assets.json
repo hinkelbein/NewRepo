@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\Exercise\\Exercise.csproj",
-      "projectName": "Exercise",
-      "projectPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\Exercise\\Exercise.csproj",
+      "projectUniqueName": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\Exercise\\RandomDataGeneration.csproj",
+      "projectName": "RandomDataGeneration",
+      "projectPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\Exercise\\RandomDataGeneration.csproj",
       "packagesPath": "C:\\Users\\javad\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\Exercise\\obj\\",
       "projectStyle": "PackageReference",
