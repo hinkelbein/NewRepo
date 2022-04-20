@@ -11,26 +11,36 @@ namespace ShortestPath.Test
             SearchAlgorithm.Origin = "1";
             SearchAlgorithm.Destination = "5";
             SearchAlgorithm.MainDestination = "5";
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "1", Orig = "1", Dest = "2", Cost = 7 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "2", Orig = "1", Dest = "3", Cost = 9 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "3", Orig = "1", Dest = "6", Cost = 14 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "4", Orig = "2", Dest = "1", Cost = 7 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "5", Orig = "2", Dest = "3", Cost = 10 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "6", Orig = "2", Dest = "4", Cost = 15 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "7", Orig = "3", Dest = "1", Cost = 9 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "8", Orig = "3", Dest = "2", Cost = 10 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "9", Orig = "3", Dest = "4", Cost = 11 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "10", Orig = "3", Dest = "6", Cost = 2 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "11", Orig = "4", Dest = "2", Cost = 15 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "12", Orig = "4", Dest = "3", Cost = 11 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "13", Orig = "4", Dest = "5", Cost = 6 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "14", Orig = "5", Dest = "4", Cost = 6 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "15", Orig = "5", Dest = "6", Cost = 9 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "16", Orig = "6", Dest = "1", Cost = 14 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "17", Orig = "6", Dest = "3", Cost = 2 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "18", Orig = "6", Dest = "5", Cost = 9 });
+            //Arc.arcs.Add(new Arc { Idno = "1", Orig = "1", Dest = "2", Cost = 7 });
+            //Arc.arcs.Add(new Arc { Idno = "2", Orig = "1", Dest = "3", Cost = 9 });
+            //Arc.arcs.Add(new Arc { Idno = "3", Orig = "1", Dest = "6", Cost = 14 });
+            //Arc.arcs.Add(new Arc { Idno = "4", Orig = "2", Dest = "1", Cost = 7 });
+            //Arc.arcs.Add(new Arc { Idno = "5", Orig = "2", Dest = "3", Cost = 10 });
+            //Arc.arcs.Add(new Arc { Idno = "6", Orig = "2", Dest = "4", Cost = 15 });
+            //Arc.arcs.Add(new Arc { Idno = "7", Orig = "3", Dest = "1", Cost = 9 });
+            //Arc.arcs.Add(new Arc { Idno = "8", Orig = "3", Dest = "2", Cost = 10 });
+            //Arc.arcs.Add(new Arc { Idno = "9", Orig = "3", Dest = "4", Cost = 11 });
+            //Arc.arcs.Add(new Arc { Idno = "10", Orig = "3", Dest = "6", Cost = 2 });
+            //Arc.arcs.Add(new Arc { Idno = "11", Orig = "4", Dest = "2", Cost = 15 });
+            //Arc.arcs.Add(new Arc { Idno = "12", Orig = "4", Dest = "3", Cost = 11 });
+            //Arc.arcs.Add(new Arc { Idno = "13", Orig = "4", Dest = "5", Cost = 6 });
+            //Arc.arcs.Add(new Arc { Idno = "14", Orig = "5", Dest = "4", Cost = 6 });
+            //Arc.arcs.Add(new Arc { Idno = "15", Orig = "5", Dest = "6", Cost = 9 });
+            //Arc.arcs.Add(new Arc { Idno = "16", Orig = "6", Dest = "1", Cost = 14 });
+            //Arc.arcs.Add(new Arc { Idno = "17", Orig = "6", Dest = "3", Cost = 2 });
+            //Arc.arcs.Add(new Arc { Idno = "18", Orig = "6", Dest = "5", Cost = 9 });
 
-            NetworkNodes_ArcsInitialization obj = new NetworkNodes_ArcsInitialization();
+            Arc.arcs.Add(new Arc { Idno = "1", Orig = "1", Dest = "4", Cost = 8 });
+            Arc.arcs.Add(new Arc { Idno = "2", Orig = "2", Dest = "1", Cost = 4 });
+            Arc.arcs.Add(new Arc { Idno = "3", Orig = "2", Dest = "5", Cost = 15 });
+            Arc.arcs.Add(new Arc { Idno = "4", Orig = "3", Dest = "1", Cost = 5 });
+            Arc.arcs.Add(new Arc { Idno = "5", Orig = "3", Dest = "2", Cost = 7 });
+            Arc.arcs.Add(new Arc { Idno = "1", Orig = "3", Dest = "5", Cost = 10 });
+            Arc.arcs.Add(new Arc { Idno = "6", Orig = "4", Dest = "3", Cost = 7 });
+            Arc.arcs.Add(new Arc { Idno = "7", Orig = "5", Dest = "3", Cost = 10 });
+            Arc.arcs.Add(new Arc { Idno = "8", Orig = "5", Dest = "4", Cost = 2 });
+
+            Arc obj = new Arc();
             obj.NodesBackarcAssingment();
         }
         [TestMethod]
@@ -40,11 +50,11 @@ namespace ShortestPath.Test
             SearchAlgorithm obj1 = new SearchAlgorithm();
             obj1.UpdateNodesProperties();
 
-            Assert.AreEqual(20, NetworkNodes_ArcsInitialization.NodeCost["1"]);
-            Assert.AreEqual(21, NetworkNodes_ArcsInitialization.NodeCost["2"]);
+            Assert.AreEqual(25, Arc.NodeCost["1"]);
+            Assert.AreEqual(17, Arc.NodeCost["2"]);
 
-            Assert.AreEqual("3", NetworkNodes_ArcsInitialization.NodeSuccessor["1"]);
-            Assert.AreEqual("4", NetworkNodes_ArcsInitialization.NodeSuccessor["2"]);
+            Assert.AreEqual("4", Arc.NodeSuccessor["1"]);
+            Assert.AreEqual("3", Arc.NodeSuccessor["2"]);
         }
 
         [TestMethod]
@@ -63,7 +73,7 @@ namespace ShortestPath.Test
             SearchAlgorithm obj2 = new SearchAlgorithm();
             obj2.ShortestPath();
 
-            List<string> path = new List<string>() { "1", "3", "6", "5" };
+            List<string> path = new List<string>() { "1", "4", "3", "5" };
             Assert.AreEqual(path[0], obj2.SHPath[0]);
             Assert.AreEqual(path[1], obj2.SHPath[1]);
             Assert.AreEqual(path[2], obj2.SHPath[2]);

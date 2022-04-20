@@ -12,9 +12,9 @@ namespace ShortestPath1
 
         static void Implementation()
         {
-            NetworkNodes_ArcsInitialization.arcs = JsonConvert.DeserializeObject<List<NetworkNodes_ArcsInitialization>>(File.ReadAllText("C:/Users/javad/source/repos/NewRepo/ShortestPath/ShortestPathInput.txt"));
+            Arc.arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("C:/Users/javad/source/repos/NewRepo/ShortestPath/ShortestPathInput.txt"));
 
-            NetworkNodes_ArcsInitialization obj = new NetworkNodes_ArcsInitialization();
+            Arc obj = new Arc();
             obj.NodesBackarcAssingment();
 
             SearchAlgorithm obj1 = new SearchAlgorithm();

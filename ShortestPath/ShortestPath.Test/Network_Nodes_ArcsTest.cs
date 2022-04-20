@@ -9,27 +9,27 @@ namespace ShortestPath.Test
         [TestMethod]
         public void NodesBackarcAssingmentTest()
         {
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "1", Orig = "a", Dest = "b", Cost = 1 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "2", Orig = "c", Dest = "b", Cost = 2 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "3", Orig = "d", Dest = "c", Cost = 3 });
-            NetworkNodes_ArcsInitialization.arcs.Add(new NetworkNodes_ArcsInitialization { Idno = "4", Orig = "f", Dest = "d", Cost = 4 });
-            NetworkNodes_ArcsInitialization obj = new NetworkNodes_ArcsInitialization();
+            Arc.arcs.Add(new Arc { Idno = "1", Orig = "a", Dest = "b", Cost = 1 });
+            Arc.arcs.Add(new Arc { Idno = "2", Orig = "c", Dest = "b", Cost = 2 });
+            Arc.arcs.Add(new Arc { Idno = "3", Orig = "d", Dest = "c", Cost = 3 });
+            Arc.arcs.Add(new Arc { Idno = "4", Orig = "f", Dest = "d", Cost = 4 });
+            Arc obj = new Arc();
             obj.NodesBackarcAssingment();
-            Assert.AreEqual(3, NetworkNodes_ArcsInitialization.BackArcs.Count);
-            Assert.AreEqual(4, NetworkNodes_ArcsInitialization.NodeCost.Count);
-            Assert.AreEqual(4, NetworkNodes_ArcsInitialization.NodeSuccessor.Count);
-            Assert.IsNotNull(NetworkNodes_ArcsInitialization.BackArcs);
+            Assert.AreEqual(3, Arc.BackArcs.Count);
+            Assert.AreEqual(5, Arc.NodeCost.Count);
+            Assert.AreEqual(5, Arc.NodeSuccessor.Count);
+            Assert.IsNotNull(Arc.BackArcs);
         }
         [TestMethod]
         public void NodesInitialization()
         {
-            NetworkNodes_ArcsInitialization obj = new NetworkNodes_ArcsInitialization();
+            Arc obj = new Arc();
             string node = "1";
             obj.NodesInitialization(node);
-            Assert.AreEqual(" ", NetworkNodes_ArcsInitialization.NodeSuccessor["1"]);
-            Assert.AreEqual(double.PositiveInfinity, NetworkNodes_ArcsInitialization.NodeCost["1"]);
-            Assert.IsNotNull(NetworkNodes_ArcsInitialization.NodeCost);
-            Assert.IsNotNull(NetworkNodes_ArcsInitialization.NodeSuccessor);
+            Assert.AreEqual(" ", Arc.NodeSuccessor["1"]);
+            Assert.AreEqual(double.PositiveInfinity, Arc.NodeCost["1"]);
+            Assert.IsNotNull(Arc.NodeCost);
+            Assert.IsNotNull(Arc.NodeSuccessor);
         }
     }
 }

@@ -11,10 +11,10 @@ namespace BenchMarkExample
         [Benchmark]
         public void Implementatio()
         {
-            Arc.arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("D:/ShortestPath/ShortestPathInput.txt"));
+            ShortestPath1.Arc.arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("D:/ShortestPath/ShortestPathInput.txt"));
             Arc obj = new Arc();
             obj.NodeAssignment();
-            obj.UpdateNodesProperties();
+            //obj.UpdateNodesProperties();
 
             //ShortestPathAlgorithm obj1 = new ShortestPathAlgorithm();
             //obj1.ShortestPath();

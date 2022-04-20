@@ -10,23 +10,23 @@
         List<string> ExtractedNodes = new List<string>();
         public void UpdateNodesProperties()
         {
-            NetworkNodes_ArcsInitialization.NodeCost[Destination] = 0;
+            Arc.NodeCost[Destination] = 0;
 
-            for (int i = 0; i < NetworkNodes_ArcsInitialization.NodeCost.Count; i++)
+            for (int i = 0; i < Arc.NodeCost.Count; i++)
             {
-                List<NetworkNodes_ArcsInitialization> backwardArcs = NetworkNodes_ArcsInitialization.BackArcs[Destination];
+                List<Arc> backwardArcs = Arc.BackArcs[Destination];
 
-                foreach (NetworkNodes_ArcsInitialization arc in backwardArcs)
+                foreach (Arc arc in backwardArcs)
                 {
-                    if (!(NetworkNodes_ArcsInitialization.NodeCost[arc.Orig] <= arc.Cost + NetworkNodes_ArcsInitialization.NodeCost[Destination]))
+                    if (!(Arc.NodeCost[arc.Orig] <= arc.Cost + Arc.NodeCost[Destination]))
                     {
-                        NetworkNodes_ArcsInitialization.NodeCost[arc.Orig] = arc.Cost + NetworkNodes_ArcsInitialization.NodeCost[Destination];
-                        NetworkNodes_ArcsInitialization.NodeSuccessor[arc.Orig] = arc.Dest;
+                        Arc.NodeCost[arc.Orig] = arc.Cost + Arc.NodeCost[Destination];
+                        Arc.NodeSuccessor[arc.Orig] = arc.Dest;
                     }
                 }
 
                 ExtractedNodes.Add(Destination);
-                var des = NetworkNodes_ArcsInitialization.NodeCost.OrderBy(x => x.Value).Where(node => node.Value >= NetworkNodes_ArcsInitialization.NodeCost[Destination]);
+                var des = Arc.NodeCost.OrderBy(x => x.Value).Where(node => node.Value >= Arc.NodeCost[Destination]);
                 foreach (KeyValuePair<string, double> item in des)
                 {
                     if (item.Key != Destination)
@@ -44,7 +44,7 @@
 
             while (true)
             {
-                string FollowingNode = NetworkNodes_ArcsInitialization.NodeSuccessor[Origin];
+                string FollowingNode = Arc.NodeSuccessor[Origin];
                 SHPath.Add(FollowingNode);
                 Origin = FollowingNode;
                 if (Origin == MainDestination) { break; }
