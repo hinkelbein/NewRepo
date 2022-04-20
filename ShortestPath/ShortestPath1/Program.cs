@@ -12,21 +12,21 @@ namespace ShortestPath1
 
         static void Implementation()
         {
-            Arc.arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("D:/ShortestPath/ShortestPathInput.txt"));
+            NetworkNodes_ArcsInitialization.arcs = JsonConvert.DeserializeObject<List<NetworkNodes_ArcsInitialization>>(File.ReadAllText("C:/Users/javad/source/repos/NewRepo/ShortestPath/ShortestPathInput.txt"));
 
-            Arc obj = new Arc();
+            NetworkNodes_ArcsInitialization obj = new NetworkNodes_ArcsInitialization();
             obj.NodesBackarcAssingment();
 
-            ShortestPathAlgorithm obj1 = new ShortestPathAlgorithm();
+            SearchAlgorithm obj1 = new SearchAlgorithm();
             obj1.ShortestPath();
         }
 
         static void InputData()
         {
             Console.WriteLine("Please choose your Origin-Destination couple\nYou are allowed to choose numbers between 1-6");
-            ShortestPathAlgorithm.Origin = InputAccuracy();
-            ShortestPathAlgorithm.Destination = InputAccuracy();
-            ShortestPathAlgorithm.MainDestination = ShortestPathAlgorithm.Destination;
+            SearchAlgorithm.Origin = InputAccuracy();
+            SearchAlgorithm.Destination = InputAccuracy();
+            SearchAlgorithm.MainDestination = SearchAlgorithm.Destination;
         }
 
         static string InputAccuracy()
@@ -34,13 +34,13 @@ namespace ShortestPath1
             while (true)
             {
                 int input = Int16.Parse(Console.ReadLine());
-                if (ShortestPathAlgorithm.Origin == null && input >= 1 && input <= 6)
+                if (SearchAlgorithm.Origin == null && input >= 1 && input <= 6)
                 {
                     return input.ToString();
                 }
-                else if (ShortestPathAlgorithm.Origin != null && input >= 1 && input <= 6)
+                else if (SearchAlgorithm.Origin != null && input >= 1 && input <= 6)
                 {
-                    if (input.ToString() == ShortestPathAlgorithm.Origin)
+                    if (input.ToString() == SearchAlgorithm.Origin)
                     {
                         Console.WriteLine("Entered number is repeated, please try another number for destination");
                     }

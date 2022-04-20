@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj": {}
+    "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj": {
+    "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
+        "projectUniqueName": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
         "projectName": "ShortestPath.Test",
-        "projectPath": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
-        "packagesPath": "C:\\Users\\Javad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath.Test\\obj\\",
+        "projectPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath.Test\\ShortestPath.Test.csproj",
+        "packagesPath": "C:\\Users\\javad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj": {
-                "projectPath": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj"
+              "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj": {
+                "projectPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj"
               }
             }
           }
@@ -72,21 +72,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj": {
+    "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj",
+        "projectUniqueName": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj",
         "projectName": "ShortestPath1",
-        "projectPath": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj",
-        "packagesPath": "C:\\Users\\Javad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\ShortestPath1\\obj\\",
+        "projectPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj",
+        "packagesPath": "C:\\Users\\javad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -132,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

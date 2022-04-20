@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Javad\\.nuget\\packages\\": {}
+    "C:\\Users\\javad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\Exercise\\Exercise.csproj",
+      "projectUniqueName": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\Exercise\\Exercise.csproj",
       "projectName": "Exercise",
-      "projectPath": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\Exercise\\Exercise.csproj",
-      "packagesPath": "C:\\Users\\Javad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Javad\\OneDrive - uniroma1.it\\Documents\\GitHub\\ShotestPath\\ShortestPath\\Exercise\\obj\\",
+      "projectPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\Exercise\\Exercise.csproj",
+      "packagesPath": "C:\\Users\\javad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\Exercise\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
