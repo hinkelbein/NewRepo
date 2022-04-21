@@ -6,6 +6,7 @@
         public Node pointer;
         public int count;
 
+
         public Heap(Dictionary<string, Node> nodes)
         {
             count = 0;
