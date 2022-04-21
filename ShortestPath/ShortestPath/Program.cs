@@ -16,8 +16,11 @@ namespace ShortestPath
             Arc obj = new Arc();
             obj.NodeAssignment();
 
-            Search obj1 = new Search();
-            obj1.ShortestPath();
+            Node obj1 = new Node();
+            obj1.HeapInitialization();
+
+            Search obj2 = new Search();
+            obj2.ShortestPath();
         }
 
         static void InputData()

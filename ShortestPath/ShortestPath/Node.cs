@@ -9,7 +9,7 @@
         public string ID { get; set; }
         public double Cost { get; set; }             // Node Cost.
         public string Successor { get; set; }        // Node Successor.
-        public static List<Node> NetworkNodes = new List<Node>();     // Aggregation of all the network nodes as list of nodes.
+        public static Dictionary<string, Node> NetworkNodes = new Dictionary<string, Node>();     // Aggregation of all the network nodes as list of nodes.
 
         public Node(string ID, double Cost, string Successor)
         {
@@ -17,7 +17,6 @@
             this.Cost = Cost;
             this.Successor = Successor;
         }
-
         public Node(double cost, Node p)
         {
             Cost = cost;
@@ -38,5 +37,10 @@
         {
 
         }
+        public void HeapInitialization()
+        {
+            Heap heap = new Heap(NetworkNodes);
+        }
+
     }
 }

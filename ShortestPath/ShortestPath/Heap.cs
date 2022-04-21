@@ -5,8 +5,7 @@
         public Node root;
         public Node pointer;
         public int count;
-
-
+        public static Heap BinaryHeap;
         public Heap(Dictionary<string, Node> nodes)
         {
             count = 0;

@@ -33,5 +33,11 @@
             Node.NetworkNodes.Add(node);
             return node;
         }
+
+        public static void HeapInitialization(string orig)  // Initialization Node's Costs and Successors
+        {
+            Node node = new Node(orig, double.PositiveInfinity, "1");
+            Node.NetworkNodes.Add(node);
+        }
     }
 }
