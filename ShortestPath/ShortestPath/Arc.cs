@@ -8,21 +8,23 @@
         public double Cost { get; set; }
 
         public static List<Arc> arcs = new List<Arc>();
-        public static Dictionary<string, List<Arc>> Network_Nods_BackArcs = new Dictionary<string, List<Arc>>();
+        public static Dictionary<string, List<Arc>> BackArcs = new Dictionary<string, List<Arc>>();
 
         public void NodeAssignment()
         {
             foreach (Arc arc in arcs)
             {
-                if (!Network_Nods_BackArcs.ContainsKey(arc.Dest))
+                if (!Node.NetworkNodes.ContainsKey(arc.Orig)) { NodesInitialization(arc.Orig); }
+                if (!Node.NetworkNodes.ContainsKey(arc.Dest)) { NodesInitialization(arc.Dest); }
+
+                if (!BackArcs.ContainsKey(arc.Dest))
                 {
-                    NodesInitialization(arc.Dest);
                     List<Arc> list = new List<Arc>() { arc };
-                    Network_Nods_BackArcs.Add(arc.Dest, list);
+                    BackArcs.Add(arc.Dest, list);
                 }
                 else
                 {
-                    Network_Nods_BackArcs[arc.Dest].Add(arc);
+                    BackArcs[arc.Dest].Add(arc);
                 }
             }
         }
@@ -32,12 +34,6 @@
             Node node = new Node(orig, double.PositiveInfinity, "1");
             Node.NetworkNodes.Add(orig, node);
             return node;
-        }
-
-        public static void HeapInitialization(string orig)  // Initialization Node's Costs and Successors
-        {
-            Node node = new Node(orig, double.PositiveInfinity, "1");
-            Node.NetworkNodes.Add(orig, node);
         }
     }
 }

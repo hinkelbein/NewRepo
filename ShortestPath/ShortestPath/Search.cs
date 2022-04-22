@@ -4,64 +4,72 @@
     {
         public static string Origin;
         public static string Destination;
-        List<Node> ExtractedNodes = new List<Node>();
+        public static string MainDestination;
+        Dictionary<string, Node> ExtractedNodes = new Dictionary<string, Node>();
+        Heap heap;
+        public void HeapInitialization()
+        {
+            heap = new Heap(Node.NetworkNodes);
+        }
+
         public void UpdateNodesProperties()
         {
-            //var des = Node.NetworkNodes.Find(node => node.ID == Destination);
-            //des.Cost = 0;
-            //int n = 0;
-            //while (true)
-            //{
-            //    List<Arc> backwardArcs = Arc.arcs.Where(arc => arc.Dest.Contains(des.ID)).ToList();  // Backward Arcs
-            //    List<Node> precedNodes = Node.NetworkNodes.Where(node => backwardArcs.Any(arc => node.ID == arc.Orig)).ToList();  // Precede Nodes
+            HeapInitialization();
+            Node.NetworkNodes[Destination].Cost = 0;
+            ExtractedNodes.Add(Destination, Node.NetworkNodes[Destination]);
+            Heap.Add(Node.NetworkNodes[Destination]);
+            for (int i = 0; i < Node.NetworkNodes.Count; i++)
+            {
+                List<Arc> backwardArcs = Arc.BackArcs[Destination];
 
-            //    foreach (Node node in precedNodes)
-            //    {
-            //        foreach (var arc in Arc.arcs)
-            //        {
-            //            if (arc.Orig.Contains(node.ID) && arc.Dest.Contains(des.ID)) // Bellman Theory application "Wi <= Carc + Wj"
-            //            {
-            //                if (!(node.Cost <= arc.Cost + des.Cost))
-            //                {
-            //                    node.Cost = arc.Cost + des.Cost;
-            //                    node.Successor = des.ID;
-            //                }
-            //            }
-            //        }
-            //    }
-            //    ExtractedNodes.Add(des);
-            //    Node.NetworkNodes.Remove(des);
+                foreach (Arc arc in backwardArcs)
+                {
+                    if (!(Node.NetworkNodes[arc.Orig].Cost <= Node.NetworkNodes[arc.Dest].Cost))
+                    {
+                        Node.NetworkNodes[arc.Orig].Cost = arc.Cost + Node.NetworkNodes[arc.Dest].Cost;
+                        Node.NetworkNodes[arc.Orig].Successor = arc.Dest;
+                        Heap.Add(Node.NetworkNodes[arc.Orig]);
+                    }
+                }
 
-            //    n += 1;
-            //    List<Node> newDes = Node.NetworkNodes.OrderBy(node => node.Cost).ToList();
-            //    if (Node.NetworkNodes.Count > 0)
-            //    {
-            //        des = newDes.Where(node => node.Cost >= des.Cost).First();
-            //    }
-            //    else { break; }
+                if (!ExtractedNodes.ContainsKey(Heap.root.ID))
+                {
+                    ExtractedNodes.Add(Node.NetworkNodes[Heap.root.ID].ID, Node.NetworkNodes[Heap.root.ID]);
+                }
+                while (true)
+                {
+                    Node des = Heap.Remove();
+                    if (!ExtractedNodes.ContainsKey(des.ID))
+                    {
+                        Destination = Node.NetworkNodes[des.ID].ID;
+                        break;
+                    }
+                }
+
+
+            }
+        }
+        public void ShortestPath()
+        {
+            UpdateNodesProperties();
+            List<string> ShortestPath = new List<string>();
+            ShortestPath.Add(Origin);
+
+            while (true)
+            {
+                var FollowingNode = ExtractedNodes[Origin].Successor;
+                Origin = FollowingNode;
+                ShortestPath.Add(FollowingNode);
+                if (Origin == MainDestination) { break; }
+            }
+
+            Console.WriteLine($"Sequence of shortest path elements are as:");
+            foreach (string node in ShortestPath)
+            {
+                Console.WriteLine(node);
+            }
+            Console.ReadKey();
         }
     }
-    //public void ShortestPath()
-    //{
-    //    UpdateNodesProperties();
-    //    List<string> ShortestPath = new List<string>();
-    //    ShortestPath.Add(Origin);
-    //    string followingNode = Origin;
-
-    //    while (true)
-    //    {
-    //        var FollowingNode = ExtractedNodes.Find(node => node.ID == Origin);
-    //        Origin = FollowingNode.Successor;
-    //        ShortestPath.Add(Origin);
-    //        if (Origin == Destination) { break; }
-    //    }
-
-    //    Console.WriteLine($"Sequence of shortest path elements are as:");
-    //    foreach (string node in ShortestPath)
-    //    {
-    //        Console.WriteLine(node);
-    //    }
-    //    Console.ReadKey();
-    //}
 }
 

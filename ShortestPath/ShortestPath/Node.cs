@@ -37,10 +37,5 @@
         {
 
         }
-        public void HeapInitialization()
-        {
-            Heap heap = new Heap(NetworkNodes);
-        }
-
     }
 }

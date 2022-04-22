@@ -1,4 +1,6 @@
-﻿namespace ShortestPath
+﻿using Newtonsoft.Json;
+
+namespace ShortestPath
 {
     class program
     {
@@ -9,16 +11,13 @@
         }
         static void Implementation()
         {
-            //Arc.arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("D:/ShortestPath/ShortestPathInput.txt"));
+            Arc.arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("D:/ShortestPath/ShortestPathInput.txt"));
 
-            //Arc obj = new Arc();
-            //obj.NodeAssignment();
+            Arc obj = new Arc();
+            obj.NodeAssignment();
 
-            Node obj1 = new Node();
-            obj1.HeapInitialization();
-
-            //Search obj2 = new Search();
-            //obj2.ShortestPath();
+            Search obj2 = new Search();
+            obj2.ShortestPath();
         }
 
         static void InputData()
@@ -26,6 +25,7 @@
             Console.WriteLine("Please choose your Origin-Destination couple\nYou are allowed to choose numbers between 1-6");
             Search.Origin = InputAccuracy();
             Search.Destination = InputAccuracy();
+            Search.MainDestination = Search.Destination;
         }
 
         static string InputAccuracy()
@@ -56,4 +56,3 @@
         }
     }
 }
-
