@@ -1565,17 +1565,17 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "ShortestPath1/1.0.0": {
+      "ShortestPath/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "bin/placeholder/ShortestPath1.dll": {}
+          "bin/placeholder/ShortestPath.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ShortestPath1.dll": {}
+          "bin/placeholder/ShortestPath.dll": {}
         }
       }
     }
@@ -5878,10 +5878,10 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "ShortestPath1/1.0.0": {
+    "ShortestPath/1.0.0": {
       "type": "project",
-      "path": "../ShortestPath1/ShortestPath1.csproj",
-      "msbuildProject": "../ShortestPath1/ShortestPath1.csproj"
+      "path": "../ShortestPath/ShortestPath.csproj",
+      "msbuildProject": "../ShortestPath/ShortestPath.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5889,7 +5889,7 @@
       "MSTest.TestAdapter >= 2.2.9",
       "MSTest.TestFramework >= 2.2.9",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
-      "ShortestPath1 >= 1.0.0"
+      "ShortestPath >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5919,8 +5919,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj": {
-              "projectPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath1\\ShortestPath1.csproj"
+            "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj": {
+              "projectPath": "C:\\Users\\javad\\Source\\Repos\\NewRepo\\ShortestPath\\ShortestPath\\ShortestPath.csproj"
             }
           }
         }

@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace ShortestPath
+﻿namespace ShortestPath
 {
     class program
     {
@@ -11,16 +9,16 @@ namespace ShortestPath
         }
         static void Implementation()
         {
-            Arc.arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("D:/ShortestPath/ShortestPathInput.txt"));
+            //Arc.arcs = JsonConvert.DeserializeObject<List<Arc>>(File.ReadAllText("D:/ShortestPath/ShortestPathInput.txt"));
 
-            Arc obj = new Arc();
-            obj.NodeAssignment();
+            //Arc obj = new Arc();
+            //obj.NodeAssignment();
 
             Node obj1 = new Node();
             obj1.HeapInitialization();
 
-            Search obj2 = new Search();
-            obj2.ShortestPath();
+            //Search obj2 = new Search();
+            //obj2.ShortestPath();
         }
 
         static void InputData()

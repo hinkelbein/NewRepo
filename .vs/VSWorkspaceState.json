@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ShortestPath",
+    "\\ShortestPath\\ShortestPath",
+    "\\ShortestPath\\ShortestPath.Test"
   ],
-  "SelectedNode": "\\ShortestPath.sln",
+  "SelectedNode": "\\ShortestPath\\ShortestPath.Test\\ShortestPath_Heap_Test.cs",
   "PreviewInSolutionExplorer": false
 }

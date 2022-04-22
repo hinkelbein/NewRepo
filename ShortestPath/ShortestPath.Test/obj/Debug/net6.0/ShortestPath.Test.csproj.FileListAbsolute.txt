@@ -96,11 +96,6 @@ C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\obj\Debug\net
 C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\obj\Debug\net6.0\ShortestPath.Test.pdb
 C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\obj\Debug\net6.0\ShortestPath.Test.genruntimeconfig.cache
 C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\obj\Debug\net6.0\ref\ShortestPath.Test.dll
-C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath1.deps.json
-C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath1.runtimeconfig.json
-C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath1.exe
-C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath1.dll
-C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath1.pdb
 C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\testhost.exe
 C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\testhost.dll
 C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
@@ -204,3 +199,8 @@ C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\
 C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath.Test\obj\Debug\net6.0\ShortestPath.Test.pdb
 C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath.Test\obj\Debug\net6.0\ShortestPath.Test.genruntimeconfig.cache
 C:\Users\Javad\OneDrive - uniroma1.it\Documents\GitHub\ShotestPath\ShortestPath\ShortestPath.Test\obj\Debug\net6.0\ref\ShortestPath.Test.dll
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath.deps.json
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath.runtimeconfig.json
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath.exe
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath.dll
+C:\Users\javad\Source\Repos\NewRepo\ShortestPath\ShortestPath.Test\bin\Debug\net6.0\ShortestPath.pdb

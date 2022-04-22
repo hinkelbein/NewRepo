@@ -15,7 +15,7 @@
             }
         }
 
-        private void Add(Node node)
+        public static void Add(Node node)
         {
             if (root == null)
             {
@@ -47,6 +47,7 @@
                     }
                 }
                 pointer.Cost = node.Cost;
+                pointer.ID = node.ID;
 
                 while (true)
                 {
@@ -56,6 +57,11 @@
                         double tempCost = pointer.Cost;
                         pointer.Cost = pointer.Parent.Cost;
                         pointer.Parent.Cost = tempCost;
+
+                        string tempID = pointer.ID;
+                        pointer.ID = pointer.Parent.ID;
+                        pointer.Parent.ID = tempID;
+
                         pointer = pointer.Parent;
                     }
                     else
@@ -66,9 +72,9 @@
                 count++;
             }
         }
-        public double Remove()
+        public Node Remove()
         {
-            double output = root.Cost;
+            Node output = root;
             pointer = root;
             string bitcount = Convert.ToString(count, 2);
             for (int i = 1; i < bitcount.Length; i++)
@@ -84,6 +90,7 @@
                 }
             }
             root.Cost = pointer.Cost;  // set root equal to last filled space in heap
+            root.ID = pointer.ID;
             try
             {
                 //delete last filled space in heap 
@@ -137,6 +144,10 @@
                     double tempCost = pointer.Cost;
                     pointer.Cost = compare.Cost;
                     compare.Cost = tempCost;
+
+                    string tempID = pointer.ID;
+                    pointer.ID = compare.ID;
+                    compare.ID = tempID;
                     pointer = compare;
                 }
                 else

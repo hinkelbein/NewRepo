@@ -11,7 +11,7 @@
           "MSTest.TestAdapter": "2.2.9",
           "MSTest.TestFramework": "2.2.9",
           "Microsoft.NET.Test.Sdk": "17.1.0",
-          "ShortestPath1": "1.0.0"
+          "ShortestPath": "1.0.0"
         },
         "runtime": {
           "ShortestPath.Test.dll": {}
@@ -1006,12 +1006,12 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "ShortestPath1/1.0.0": {
+      "ShortestPath/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
-          "ShortestPath1.dll": {}
+          "ShortestPath.dll": {}
         }
       }
     }
@@ -1610,7 +1610,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "ShortestPath1/1.0.0": {
+    "ShortestPath/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
