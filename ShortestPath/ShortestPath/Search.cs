@@ -24,7 +24,7 @@
 
                 foreach (Arc arc in backwardArcs)
                 {
-                    if (!(Node.NetworkNodes[arc.Orig].Cost <= Node.NetworkNodes[arc.Dest].Cost))
+                    if (Node.NetworkNodes[arc.Orig].Cost > Node.NetworkNodes[arc.Dest].Cost)
                     {
                         Node.NetworkNodes[arc.Orig].Cost = arc.Cost + Node.NetworkNodes[arc.Dest].Cost;
                         Node.NetworkNodes[arc.Orig].Successor = arc.Dest;
@@ -36,6 +36,10 @@
                 {
                     ExtractedNodes.Add(Node.NetworkNodes[Heap.root.ID].ID, Node.NetworkNodes[Heap.root.ID]);
                 }
+
+
+
+                if (ExtractedNodes.Count == Node.NetworkNodes.Count) { break; }
                 while (true)
                 {
                     Node des = Heap.Remove();
@@ -45,8 +49,6 @@
                         break;
                     }
                 }
-
-
             }
         }
         public void ShortestPath()
