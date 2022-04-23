@@ -31,7 +31,7 @@
 
         public static Node NodesInitialization(string orig)  // Initialization Node's Costs and Successors
         {
-            Node node = new Node(orig, double.PositiveInfinity, "1");
+            Node node = new Node(orig, double.PositiveInfinity, " ");
             Node.NetworkNodes.Add(orig, node);
             return node;
         }

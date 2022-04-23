@@ -28,7 +28,8 @@
                     {
                         Node.NetworkNodes[arc.Orig].Cost = arc.Cost + Node.NetworkNodes[arc.Dest].Cost;
                         Node.NetworkNodes[arc.Orig].Successor = arc.Dest;
-                        Heap.Add(Node.NetworkNodes[arc.Orig]);
+                        Node node = new Node(arc.Orig, arc.Cost + Node.NetworkNodes[arc.Dest].Cost);
+                        Heap.Add(node);
                     }
                 }
 
