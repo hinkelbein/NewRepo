@@ -19,7 +19,7 @@
         {
             if (root == null)
             {
-                root = node;
+                root = new Node(node.ID, node.Cost);
                 count++;
             }
             else

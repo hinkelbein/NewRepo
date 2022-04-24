@@ -40,6 +40,7 @@
         }
         public void ShortestPath()
         {
+            HeapInitialization();
             UpdateNodesProperties();
             SHPath.Add(Origin);
 
@@ -56,6 +57,11 @@
             {
                 Console.WriteLine(node);
             }
+        }
+
+        private void HeapInitialization()
+        {
+            Heap heap = new Heap(Arc.NodeCost);
         }
     }
 }

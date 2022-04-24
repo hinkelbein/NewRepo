@@ -16,15 +16,13 @@
         {
             HeapInitialization();
             Node.NetworkNodes[Destination].Cost = 0;
-            ExtractedNodes.Add(Destination, Node.NetworkNodes[Destination]);
             Heap.Add(Node.NetworkNodes[Destination]);
             for (int i = 0; i < Node.NetworkNodes.Count; i++)
             {
                 List<Arc> backwardArcs = Arc.BackArcs[Destination];
-
                 foreach (Arc arc in backwardArcs)
                 {
-                    if (Node.NetworkNodes[arc.Orig].Cost > Node.NetworkNodes[arc.Dest].Cost)
+                    if (!(Node.NetworkNodes[arc.Orig].Cost <= Node.NetworkNodes[arc.Dest].Cost + arc.Cost))
                     {
                         Node.NetworkNodes[arc.Orig].Cost = arc.Cost + Node.NetworkNodes[arc.Dest].Cost;
                         Node.NetworkNodes[arc.Orig].Successor = arc.Dest;
@@ -32,13 +30,10 @@
                         Heap.Add(node);
                     }
                 }
-
                 if (!ExtractedNodes.ContainsKey(Heap.root.ID))
                 {
                     ExtractedNodes.Add(Node.NetworkNodes[Heap.root.ID].ID, Node.NetworkNodes[Heap.root.ID]);
                 }
-
-
 
                 if (ExtractedNodes.Count == Node.NetworkNodes.Count) { break; }
                 while (true)

@@ -5,21 +5,21 @@
         public static Node root;
         public static Node pointer;
         public static int count;
-        public static Heap BinaryHeap;
-        public Heap(Dictionary<string, Node> nodes)
+        public Heap(Dictionary<string, double> NodeCost)
         {
             count = 0;
-            foreach (KeyValuePair<string, Node> node in nodes)
+
+            foreach (KeyValuePair<string, double> node in NodeCost)
             {
-                Add(node.Value);
+                Add(node);
             }
         }
 
-        public static void Add(Node node)
+        public static void Add(KeyValuePair<string, double> node)
         {
             if (root == null)
             {
-                root = node;
+                root = new Node(node.Key, node.Value);
                 count++;
             }
             else
@@ -46,8 +46,8 @@
                         pointer = pointer.Right;
                     }
                 }
-                pointer.Cost = node.Cost;
-                pointer.ID = node.ID;
+                pointer.Cost = node.Value;
+                pointer.ID = node.Key;
 
                 while (true)
                 {

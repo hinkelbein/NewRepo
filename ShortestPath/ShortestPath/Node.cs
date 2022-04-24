@@ -17,10 +17,10 @@
             this.Cost = Cost;
             this.Successor = Successor;
         }
-        public Node(string id, double Cost)
+        public Node(string id, double cost)
         {
             ID = id;
-            Cost = Cost;
+            Cost = cost;
         }
         public Node(double cost, Node p)
         {

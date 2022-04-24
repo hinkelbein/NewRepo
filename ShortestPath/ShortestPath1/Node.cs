@@ -7,19 +7,16 @@
         public Node Right;
 
         public string ID { get; set; }
-        public double Cost { get; set; }             // Node Cost.
-        public string Successor { get; set; }        // Node Successor.
-        public static Dictionary<string, Node> NetworkNodes = new Dictionary<string, Node>();     // Aggregation of all the network nodes as list of nodes.
-
+        public double Cost { get; set; }
         public Node(double cost, Node p)
         {
             Cost = cost;
             Parent = p;
         }
-        public Node(string id, double Cost)
+        public Node(string id, double cost)
         {
             ID = id;
-            Cost = Cost;
+            Cost = cost;
         }
 
         public Node(Node p)
