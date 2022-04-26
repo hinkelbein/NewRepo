@@ -2,10 +2,11 @@
 
 namespace ShortestPath
 {
-    class program
+    class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Shortest Path");
             InputData();
             Implementation();
         }
