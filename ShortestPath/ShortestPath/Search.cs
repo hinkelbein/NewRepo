@@ -49,24 +49,31 @@
         }
         public void ShortestPath()
         {
-            UpdateNodesProperties();
-            List<string> ShortestPath = new List<string>();
-            ShortestPath.Add(Origin);
-
-            while (true)
+            try
             {
-                var FollowingNode = ExtractedNodes[Origin].Successor;
-                Origin = FollowingNode;
-                ShortestPath.Add(FollowingNode);
-                if (Origin == MainDestination) { break; }
+                UpdateNodesProperties();
+                List<string> ShortestPath = new List<string>();
+                ShortestPath.Add(Origin);
+
+                while (true)
+                {
+                    var FollowingNode = ExtractedNodes[Origin].Successor;
+                    Origin = FollowingNode;
+                    ShortestPath.Add(FollowingNode);
+                    if (Origin == MainDestination) { break; }
+                }
+
+                Console.WriteLine($"Sequence of shortest path elements are as:");
+                foreach (string node in ShortestPath)
+                {
+                    Console.WriteLine(node);
+                }
+            }
+            catch
+            {
+                throw new Exception("There is no path between the given Origin - Destination");
             }
 
-            Console.WriteLine($"Sequence of shortest path elements are as:");
-            foreach (string node in ShortestPath)
-            {
-                Console.WriteLine(node);
-            }
-            Console.ReadKey();
         }
     }
 }

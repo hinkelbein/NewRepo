@@ -5,7 +5,6 @@
         public static Node root;
         public static Node pointer;
         public static int count;
-        public static Heap BinaryHeap;
         public Heap(Dictionary<string, Node> nodes)
         {
             count = 0;
@@ -24,7 +23,6 @@
             }
             else
             {
-
                 pointer = root;
                 string bitcount = Convert.ToString(count + 1, 2);  //converts integer value to its binary form 
                 for (int i = 1; i < bitcount.Length; i++)   //start from second element of binary to exclude the parent
@@ -82,7 +80,6 @@
                 if (bitcount[i] == '0')
                 {
                     pointer = pointer.Left;
-
                 }
                 else
                 {

@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
 namespace ShortestPath.Test
 {
     [TestClass]
@@ -26,8 +25,8 @@ namespace ShortestPath.Test
         {
             Input();
             Heap heap = new Heap(nodes);
-            Assert.AreEqual("3", heap.root.ID);
-            Assert.AreEqual(2, heap.root.Cost);
+            Assert.AreEqual("3", Heap.root.ID);
+            Assert.AreEqual(2, Heap.root.Cost);
 
         }
         [TestMethod]
@@ -35,8 +34,8 @@ namespace ShortestPath.Test
         {
             Input();
             Heap heap = new Heap(nodes);
-            heap.Remove();
-            Assert.AreEqual("2", heap.root.ID);
+            Heap.Remove();
+            Assert.AreEqual("2", Heap.root.ID);
         }
 
     }
